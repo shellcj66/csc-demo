@@ -1,0 +1,81 @@
+<style type="text/css">
+  ul.date-select-apply{padding:0;margin:0 0 30px 0;list-style: none;clear:both;}
+  ul.date-select-apply li{padding:0;margin:0;float: left;list-style: none;}
+  ul.date-select-apply li a{display:block;text-align:center;width: 50px;padding:3px 0;margin:0 5px 0 0;}
+  ul.date-select-apply li.active a{background-color: #23b7e5;color: #fff;}
+</style>
+<div class="simple_form form-horizontal">
+  <div class='modal-dialog modal-lg'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>申请云应用服务</h3>
+      </div>
+      <div class='modal-body' style="padding:0;overflow: hidden;">   
+        <div style="padding:10px 15px;background-color: #f6f8f8;border-bottom:1px #f0f0f0 solid;">订购信息</div>
+        <div style="overflow-y: auto;">
+          <div style="position: relative;margin:50px 0" class="clearfix">
+            <div class="pull-left  text-right" style="width:150px;">申请时长</div>
+            <div class="pull-left" style="position: absolute;left:170px;">
+              <ul class='date-select-apply'>
+                <li class="active"><a href="#">1个月</a></li>
+                <li><a href="#">2个月</a></li>
+                <li><a href="#">3个月</a></li>
+                <li><a href="#">4个月</a></li>
+                <li><a href="#">5个月</a></li>
+                <li><a href="#">6个月</a></li>
+                <li><a href="#">7个月</a></li>
+                <li><a href="#">8个月</a></li>
+                <li><a href="#">9个月</a></li>
+                <li><a href="#">10个月</a></li>
+                <li><a href="#">11个月</a></li>
+              </ul>
+              <ul class='date-select-apply'>
+                <li><a href="#">1年</a></li>
+                <li><a href="#">2年</a></li>
+                <li><a href="#">3年</a></li>
+                <li><a href="#">4年</a></li>
+                <li><a href="#">5年</a></li>
+                <li><a href="#">6年</a></li>
+                <li><a href="#">7年</a></li>
+                <li><a href="#">8年</a></li>
+                <li><a href="#">9年</a></li>
+                <li><a href="#">10年</a></li>
+                <li><a href="#">11年</a></li>
+              </ul>
+            </div>
+          </div>
+          <div style="position: relative;margin:20px 0 50px" class="clearfix">
+            <div class="pull-left  text-right" style="width:150px;">申请数量</div>
+            <div class="pull-left" style="position: absolute;left:170px;">
+              <select class="form-control input-sm">
+                <option>1</option>
+              </select>
+            </div>
+          </div>
+          <div style="padding:20px 100px;background: #f6f8f8;border-top:1px #f0f0f0 solid;">
+            <p>云应用：<span class="text-lg text-info">8.99</span>元/月 x 2个月&nbsp;&nbsp;&nbsp;&nbsp;共 <span class="text-lg text-info">8</span> 台</p>
+            <div class="row">
+              <div class="col-sm-8">
+                <p>云硬盘：<span class="text-lg text-info">6.22</span>元/月 x 8个月&nbsp;&nbsp;&nbsp;&nbsp;共 <span class="text-lg text-info">9</span> 台</p>
+              </div> 
+              <div class="col-sm-4 text-right">
+                费用共计：<span class="text-lg text-info">8924.45</span>元
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer' style="text-align:center;">
+        <a class="btn btn-default btn-info">添加到购物车</a>
+        <a class="btn btn-default btn-success">提交订单</a>
+        <a class="btn btn-default btn btn-default" data-dismiss="modal">取消</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var scripts = [null, "assets/lib/moment/moment.js","assets/lib/bootstrap-daterangepicker/daterangepicker.js", null];
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+
+  })
+</script>

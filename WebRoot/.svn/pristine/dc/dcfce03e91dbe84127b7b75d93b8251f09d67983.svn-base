@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>申请云主机</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <link href='../../../assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/animate.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/simple-line-icons.css' rel='stylesheet' type='text/css'>
+    <link href="../../../assets/lib/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../../../assets/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet">
+    <link href="../../../assets/lib/bootstrap-slider/slider.css" rel="stylesheet">
+    <link href='../../../assets/css/font.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/angulr.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/knockout-datatable.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="../../../assets/css/app.css" />
+
+    <style type="text/css">
+    /* 配置 */
+    .config-item{margin-bottom: 10px;}
+    .config-item .panel{margin-bottom: 0;}
+    .config-item .panel-heading{font-weight: 700;}
+    .config-item table{border-collapse: collapse !important;}
+    .config-item table tr th{padding: 10px;border:1px solid #dee5e7; text-align: center; background-color: #EFF2F3;}
+    .config-item table tr td{padding: 10px;border:1px solid #dee5e7; text-align: center;}
+    </style>
+</head>
+
+<body>
+
+<div class='wrapper-md'>
+  <div class="row">
+      <div class="col-xs-9 col-xs-offset-2">
+          <h1><img alt='广州开发区' src='../../../assets/img/gz_kfq/logo_gzkfq.png'></h1>
+      </div>
+  </div> 
+  <h2 class="text-center">申请云主机</h2>
+  <form class='form-horizontal' data-bind="">
+    <div class="form-group">
+      <label class="col-xs-3 control-label">申请人：</label>
+      <div class="col-xs-6">
+        <span class="inline m-t-xs">person</span>
+      </div>
+    </div>  
+    <div class="form-group">
+      <label class="col-xs-3 control-label">所在组织：</label>
+      <div class="col-xs-6">
+        <span class="inline m-t-xs">信息办</span>
+      </div>
+    </div>  
+    <div class="form-group">
+      <label class="col-xs-3 control-label">项目名称：</label>
+      <div class="col-xs-6">
+        <span class="inline m-t-xs">开发区平台项目</span>
+      </div>
+    </div> 
+    <div class="form-group">
+      <label class="col-xs-3 control-label">选择配置：</label>
+      <div class="col-xs-6">
+        <div class="config">
+          <div class="config-item">
+              <div class="panel no-border">
+                  <div class="panel-heading bg-success">
+                    <span>套餐一：A型云主机</span>
+                    <span class="pull-right"><button name="button" class="btn btn-default btn-xs">增加</button></span>
+                  </div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <th>CPU</th>
+                      <th>内存</th>
+                      <th>存储</th>
+                    </tr>
+                    <tr>
+                      <td>4个</td>
+                      <td>4GB</td>
+                      <td>500GB</td>
+                    </tr>
+                  </table>
+                  <div class="wrapper-sm b-b">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统</option>
+                          <option value="windows">windows</option>
+                          <option value="linux">linux</option>
+                        </select>    
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统版本</option>
+                          <option value="windows server 2003">windows server 2003</option>
+                          <option value="windows server 2008 R2">windows server 2008 R2</option>
+                        </select> 
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择数量</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> 
+                      </div>
+                      <a onclick="" class="inline v-middle"><i class="glyphicon glyphicon-remove-circle text-2x"></i></a>
+                    </div>                                                  
+                  </div>
+                  <div class="wrapper-sm b-b">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统</option>
+                          <option value="windows">windows</option>
+                          <option value="linux">linux</option>
+                        </select>    
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统版本</option>
+                          <option value="windows server 2003">windows server 2003</option>
+                          <option value="windows server 2008 R2">windows server 2008 R2</option>
+                        </select> 
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择数量</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> 
+                      </div>
+                      <a onclick="" class="inline v-middle"><i class="glyphicon glyphicon-remove-circle text-2x"></i></a>
+                    </div>                                                  
+                  </div>
+                  <div class="wrapper-sm b-b">
+                    <div class="form-inline">
+                      <div class="form-group">
+                        <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统</option>
+                          <option value="windows">windows</option>
+                          <option value="linux">linux</option>
+                        </select>    
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择操作系统版本</option>
+                          <option value="windows server 2003">windows server 2003</option>
+                          <option value="windows server 2008 R2">windows server 2008 R2</option>
+                        </select> 
+                      </div>
+                      <div class="form-group">
+                         <select class="form-control" data-bind="value:">
+                          <option value="0">请选择数量</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> 
+                      </div>
+                      <a onclick="" class="inline v-middle"><i class="glyphicon glyphicon-remove-circle text-2x"></i></a>
+                    </div>                                                  
+                  </div>
+              </div>
+          </div>
+          <div class="config-item">
+              <div class="panel no-border">
+                  <div class="panel-heading bg-primary">
+                    <span>套餐二：B型云主机</span>
+                    <span class="pull-right"><button name="button" class="btn btn-default btn-xs">增加</button></span>
+                  </div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <th>CPU</th>
+                      <th>内存</th>
+                      <th>存储</th>
+                    </tr>
+                    <tr>
+                      <td>6个</td>
+                      <td>8GB</td>
+                      <td>800GB</td>
+                    </tr>
+                  </table>
+              </div>
+          </div>
+          <div class="config-item">
+              <div class="panel no-border">
+                  <div class="panel-heading bg-info">
+                    <span>套餐三：C型云主机</span>
+                    <span class="pull-right"><button name="button" class="btn btn-default btn-xs">增加</button></span>
+                  </div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <th>CPU</th>
+                      <th>内存</th>
+                      <th>存储</th>
+                    </tr>
+                    <tr>
+                      <td>10个</td>
+                      <td>8GB</td>
+                      <td>800GB</td>
+                    </tr>
+                  </table>
+              </div>
+          </div>   
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <span class="text-muted inline m-t-xs">根据项目需要的运行环境，选择资源种类和申请数量</span>
+      </div>      
+    </div>
+    <div class="form-group">
+      <label class="col-xs-3 control-label">数据库类型：</label>
+      <div class="col-xs-6">
+        <select class="form-control" data-bind="value:">
+          <option value="1">请选择数据库</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>  
+      <div class="col-xs-3">
+        <span class="text-muted inline m-t-xs">运行项目所使用的数据库</span>
+      </div>      
+    </div>
+    <div class="form-group">
+      <label class="col-xs-3 control-label">年预测容量：</label>
+      <div class="col-xs-6">
+        <div class="input-group">
+          <input class="form-control" type="text" value="40">
+          <span class="input-group-addon">GB</span>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <span class="text-danger inline m-l-n m-t-sm m-r-xs">*</span>
+        <span class="text-muted inline m-t-xs">预测每年需要使用的数据容量</span>
+      </div>      
+    </div>
+    <div class="form-group">
+      <label class="col-xs-3 control-label">审批公文：</label>
+      <div class="col-xs-6">
+        <span class="inline m-t-xs">20170606word.doc</span>
+        <a href="#" class="inline m-t-xs text-info">下载</a>
+      </div>   
+    </div>
+    <div class="line line-dashed b-b line-lg pull-in"></div>
+    <div class="m-t m-b text-center">
+      <a href="gz_vm_preview.html" class="btn btn-info">提交订单</a>
+      <a href="#" class="btn btn-default">关闭</a>
+    </div>    
+  </form>
+</div>
+
+</body>
+</html>

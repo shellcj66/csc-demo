@@ -1,0 +1,188 @@
+<link href="assets/lib/zTree/css/ibos/ibos.css" rel="stylesheet" type="text/css" />
+
+<div class="app-content-full">
+  <div class="bg-light lter b-b wrapper-sm">
+    <ol class="breadcrumb">
+      <li>当前位置：</li>
+      <li>系统</li>
+      <li class="active">用户管理</li>
+    </ol>
+  </div>
+  <!-- hbox layout -->
+  <div class="hbox hbox-auto-xs bg-light">
+    <!-- column -->
+    <div class="col w lter b-r">
+      <div class="vbox">
+        <div class="row-row">
+          <div class="cell scrollable hover">
+            <div class="cell-inner">
+              <div id="userTree" class="ztree" style="margin-left:8px;">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /column -->
+  
+  <!-- column -->
+<div class='wrapper-md'>
+
+    <div class="panel panel-default b-blue">
+      <div class="row wrapper">
+        <div class="col-xs-3">
+          <button class="btn btn-sm btn-info" onclick="showModal('pages/systems/users/new.html')">创建</button>
+        </div>
+        <div class="col-xs-2 m-t-xs">
+          <label class="i-checks">
+            <input type="checkbox" value="">
+            <i></i>冻结用户
+          </label>    
+        </div>          
+        <div class="col-xs-3">
+            <div class="input-group">
+               <span class="input-group-addon">账号</span>
+               <input type="text" value="" class="form-control input-sm">
+            </div>       
+        </div>          
+        <div class="col-xs-3">
+            <div class="input-group">
+               <span class="input-group-addon">昵称</span>
+               <input type="text" value="" class="form-control input-sm">
+            </div>        
+        </div>
+        <div class="col-xs-1">
+            <button class="btn btn-default btn-sm" type="submit">搜索</button>
+        </div>         
+      </div>    
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>账号</th>
+              <th>昵称</th>
+              <th>手机</th>
+              <th>邮箱</th>
+              <th>用户属性</th>
+              <th>状态</th>
+              <th>所属平台</th>
+              <th>角色</th>
+              <th>操作</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>admin</td>
+              <td>系统管理员</td>
+              <td>13502451458</td>
+              <td>fanbingbing@winhong.com</td>
+              <td>本地用户</td>
+              <td>
+                <span class="label label-success">有效</span>
+                <span class="label label-danger">无效</span>
+                <span class="label label-warning">冻结</span>
+              </td>
+              <td>CSC</td>
+              <td>管理员</td>
+              <td>
+                <a onclick="showModal('pages/systems/users/edit.html')">修改</a> |                 
+                <a>重置密码</a> | 
+                <div class="btn-group">
+                  <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    更多<span class="fa fa-caret-down"></span>
+                  </a>
+                  <ul style="right:0;min-width:50px;left:auto;" class="dropdown-menu">
+                    <li>
+                      <a href="#">冻结</a>
+                      <a href="#">获取口令卡</a>
+                      <a href="#">登录设置</a>
+                      <a href="#">删除</a>
+                    </li>
+                  </ul>
+                </div>                
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <footer class="panel-footer">
+        <ul class="pagination">
+          <li class="page active">
+            <a href="#pages/javascript:void(0)">1</a>
+          </li>
+          <li class="page">
+            <a>2</a>
+          </li>
+          <li class="page">
+            <a>3</a>
+          </li>
+          <li class="page">
+            <a>4</a>
+          </li>
+          <li class="page">
+            <a >5</a>
+          </li>
+          <li class="page gap disabled">
+            <a href="#pages/javascript:void(0)">…</a>
+          </li>
+          <li class="next">
+            <a>下页 ›</a>
+          </li>
+          <li class="last">
+            <a>末页 »</a>
+          </li>
+        </ul>
+      </footer>
+    </div>    
+    
+</div>
+
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+  var scripts = [null, 'assets/lib/zTree/js/jquery.ztree.core.js', null]
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+    //inline scripts related to this page
+
+    <!--
+    var setting = {
+      view:{
+        showIcon:false,
+        showLine:false
+      }
+    };
+
+    var zNodes =[
+      { name:"本地组织", open:true,
+        children: [
+          { name:"XXX公司", open:true,
+            children: [
+              { name:"财务部"},
+              { name:"人资部"}
+            ]}
+        ]
+      },
+       { name:"AD域组织", open:true,
+        children: [
+          { name:"XXX公司", open:true,
+            children: [
+              { name:"财务部"},
+              { name:"人资部"}
+            ]}
+        ]
+      },
+    ];
+
+    $(document).ready(function(){
+      $.fn.zTree.init($("#userTree"), setting, zNodes);
+    });
+    //-->
+
+    $('.service-delete-btn').click(function(){
+      if(confirm('确定删除吗？')){
+        console.log('执行删除！')
+      }
+    })
+
+  });
+</script>

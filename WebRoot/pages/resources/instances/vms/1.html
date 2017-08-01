@@ -1,0 +1,791 @@
+<div class="bg-light lter b-b wrapper-sm">
+  <ol class="breadcrumb">
+    <li>当前位置：</li>
+    <li>资源</li>
+    <li><a href="#pages/resources/instances/index">资源实例</a></li>
+    <li class="active">云主机-0-0</li>
+  </ol>
+</div>
+<div class="wrapper-md">
+  <div class='nav-tabs-alt bg-white-only b b-blue'>
+    <ul class='nav nav-tabs' role='tablist'>
+      <li class='active' role='presentation'>
+        <a aria-controls='instance_vm_summary' data-toggle='tab' href='#instance_vm_summary' role='tab'>云主机摘要</a></li>
+      <li role='presentation'>
+        <a aria-controls='instance_vm_softwares' data-toggle='tab' href='#instance_vm_monitor' role='tab'>监控</a></li>
+      <li role='presentation'>
+        <a aria-controls='instance_vm_scripts' data-toggle='tab' href='#instance_vm_tasks' role='tab'>调度任务</a></li>
+      <li role='presentation'>
+    </ul>
+    <div class='tab-content'>
+      <div class='tab-pane active' id='instance_vm_summary' role='tabpanel'>
+        <div class='panel panel-default'>
+          <div class="row wrapper">
+            <div class="col-xs-9 m-b-xs">
+              <button class="btn btn-sm btn-default">关机</button>
+              <button class="btn btn-sm btn-default">重启</button>
+              <button class="btn btn-sm btn-default">控制台</button>
+            </div>
+          </div> 
+          <div class="row wrapper">
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class='panel-heading'>基本信息</div>
+                <div class="table-responsive">
+                  <table class="table table-properties">
+                    <tr><th>云主机名称</th><td>云主机-0-0</td></tr>
+                    <tr><th>所属VDC</th><td>test123</td></tr>
+                    <tr><th>业务系统/VPC</th><td>test123</td></tr>
+                    <tr><th>云主机状态</th><td>运行中</td></tr>
+                    <tr><th>操作系统</th><td>Microsoft Windows Server 2003</td></tr>
+                    <tr><th>云主机IP地址</th><td>192.168.1.1</td></tr>
+                    <tr><th>所属物理机名称</th><td>主机001</td></tr>
+                    <tr><th>云主机创建人</th><td>系统管理员</td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-default">
+                <div class='panel-heading'>资源配置</div>
+                <table class="table table-properties">
+                  <tr><th>VCPU个数</th><td>1</td></tr>
+                  <tr><th>内存</th><td>20G</td></tr>
+                  <tr><th>存储</th><td>100G</td></tr>
+                </table>
+              </div>
+              <div class="panel panel-default">
+                <div class='panel-heading'>资源使用率</div>
+                <table class="table table-properties">
+                  <tr><th>CPU使用率</th><td>0.00%</td></tr>
+                  <tr><th>内存使用率</th><td>0.00%</td></tr>
+                </table>
+              </div>              
+            </div>
+            <div class="col-xs-3">
+              <div class="panel panel-default">
+                <div class='panel-heading'>其他</div>
+                <div class="table-responsive">
+                  <table class="table table-properties">
+                    <tr><th>UUID</th><td>xxxxxxx</td></tr>
+                    <tr><th>创建时间</th><td>2016-04-01 15:21:58</td></tr>
+                    <tr><th>生效时间</th><td>2016-04-01</td></tr>
+                    <tr><th>失效时间</th><td>2016-04-01</td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row wrapper">
+            <div class="col-xs-9 m-b-xs">
+              <h4>云硬盘列表</h4>
+            </div>
+            <div class="col-xs-3 m-b-xs">
+              <button class="btn btn-sm btn-default pull-right">刷新</button>
+            </div>
+          </div>         
+          <div id='instance_storages'>
+            <div class='table-responsive no-height'>
+              <table class='table table-striped'>
+                <thead>
+                  <tr>
+                    <th>云硬盘名称</th>
+                    <th>云硬盘类型</th>
+                    <th>虚拟化类型</th>
+                    <th>资源区</th>
+                    <th>大小</th>
+                    <th>状态</th>
+                    <th>保存路径</th>
+                    <th>读写</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>硬盘1</td>
+                    <td>系统盘</td>
+                    <td>cnware</td>
+                    <td>datastore</td>
+                    <td>19GB</td>
+                    <td></td>
+                    <td>可用</td>
+                    <td>只读或者读写</td>
+                    <td>
+                      <a href="#">扩展</a>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row wrapper">
+            <div class="col-xs-9 m-b-xs">
+              <h4>软件列表</h4>
+            </div>
+            <div class="col-xs-3 m-b-xs">
+              <button class="btn btn-sm btn-default pull-right">刷新</button>
+            </div>
+          </div>    
+          <div class="row wrapper">
+            <div class="col-xs-1">
+              <a class="btn btn-info btn-sm" data-bind="click: install">安装软件</a>
+            </div>
+            <div class="col-xs-3">
+              <div class="input-group w">
+                <span class="input-group-addon">软件类型</span>
+                <select class="form-control input-sm">
+                  <option value="0">类型1</option>
+                  <option value="1">类型2</option>
+                  <option value="2">类型3</option>
+                  <option value="3">类型4</option>
+                </select>
+              </div>                
+            </div>            
+            <div class="col-xs-5">
+              <div class="input-group w">
+                <span class="input-group-addon">安装类型</span>
+                <select class="form-control input-sm">
+                  <option value="0">类型1</option>
+                  <option value="1">类型2</option>
+                  <option value="2">类型3</option>
+                  <option value="3">类型4</option>
+                </select>
+              </div>                
+            </div>            
+            <div class="col-xs-3">
+              <div class="input-group">
+                <input type="text" class="input-sm form-control" placeholder="请输入软件名称">
+                <span class="input-group-btn">
+                  <button class="btn btn-sm btn-default" type="button">搜索</button>
+                </span>
+              </div>
+            </div>
+          </div>                     
+          <div id='instance_storages'>
+            <div class='table-responsive no-height'>
+              <table class='table table-striped'>
+                <thead>
+                  <tr>
+                    <th>软件名称</th>
+                    <th>软件版本</th>
+                    <th>软件类型</th>
+                    <th>静默安装属性</th>
+                    <th>安装时间</th>
+                    <th>安装状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MQ</td>
+                    <td>7.5</td>
+                    <td>cnware</td>
+                    <td><a>查看</a> | <a>修改</a></td>
+                    <td>19GB</td>
+                    <td>安装成功</td>
+                    <td><a>重安装</a> | <a>安装日志</a> | <a data-bind="click: update">升级</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>          
+        </div>
+      </div>
+      <div class='tab-pane' id='instance_vm_monitor' role='tabpanel'>
+        <div class='panel panel-default'>
+
+          <div class="row wrapper">
+            <div class="col-xs-9">
+              <select class="input-sm form-control w-sm inline v-middle">
+                <option value="0">10分钟</option>
+                <option value="1">20分钟</option>
+                <option value="2">30分钟</option>
+                <option value="3">60分钟</option>
+              </select> 
+              <button class="btn btn-sm btn-default" data-bind="click: config">告警配置</button>
+            </div>
+          </div> 
+          
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="panel panel-default">
+                  <div class='panel-heading'>CPU使用率(%)</div>
+                  <div class="panel-body">
+                    <div id="cpuUse_chart" style="height:150px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="panel panel-default">
+                  <div class='panel-heading'>内存使用率(%)</div>
+                  <div class="panel-body">
+                    <div id="memoryUse_chart" style="height:150px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="panel panel-default">
+                  <div class='panel-heading'>存储使用率(%)</div>
+                  <div class="panel-body">
+                    <div id="storageUse_chart" style="height:150px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="panel panel-default">
+                  <div class='panel-heading'>存储IO(kB/s)</div>
+                  <div class="panel-body">
+                    <div id="storageIO_chart" style="height:150px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            
+          </div>
+
+        </div>
+      </div>
+      <div class='tab-pane' id='instance_vm_tasks' role='tabpanel'>
+        <div class='table-responsive'>
+          <table class='table table-striped'>
+            <thead>
+              <tr>
+                <th>任务编号</th>
+                <th>任务名称</th>
+                <th>任务进度</th>
+                <th>任务状态</th>
+                <th>操作人</th>
+                <th>开始时间</th>
+                <th>完成时间</th>
+                <th>操作</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>xxx</td>
+                <td>虚拟机备份</td>
+                <td>
+                  <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-info" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                  </div>                
+                </td>
+                <td><span class="label label-success">成功</span></td>
+                <td>admin</td>
+                <td>2016-06-30 17:32:32</td>
+                <td>2016-06-30 17:32:52</td>
+                <td>
+                  <a href="#">停止</a>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class='panel-footer'>
+          <ul class="pagination">
+            <li class="page active">
+              <a href="#pages/javascript:void(0)">1</a></li>
+            <li class="page">
+              <a rel="next" href="#pages/http://localhost/instance_vms/1?locale=zh-CN&amp;page_instance_scripts=2">2</a></li>
+            <li class="next">
+              <a rel="next" href="#pages/http://localhost/instance_vms/1?locale=zh-CN&amp;page_instance_scripts=2">下页 &rsaquo;</a></li>
+            <li class="last">
+              <a href="#pages/http://localhost/instance_vms/1?locale=zh-CN&amp;page_instance_scripts=2">末页 &raquo;</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="dialog" aria-hidden="true" class="modal fade" data-bind="modal: { show: isConfig }">
+  <div class='modal-dialog modal-md'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>告警配置</h3>
+      </div>
+      <div class='modal-body form-horizontal wrapper'>
+
+        <p class="text-muted">在这里，您可以启用虚拟机的资源使用率监控项，包括对CPU、磁盘、网络的监控</p>
+        <h4>监控选择</h4>
+        <div class="text-dark">
+            <div class="checkbox inline">
+              <label class="i-checks">
+                <input type="checkbox" value="">
+                <i></i>
+              </label>
+            </div>
+            启用CPU使用率告警       
+        </div>
+        <div class="m-t m-l-lg text-primary">
+           当CPU使用率超过
+           <div class="inline v-middle">
+             <div class="input-group w-xs">
+                 <input type="text" value="50" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">%</span>
+              </div>
+           </div>
+          ，且持续时间超过
+          <div class="inline v-middle">
+              <div class="input-group w-xs">
+                 <input type="text" value="5" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">分钟</span>
+              </div>
+          </div>，触发告警     
+        </div>
+        
+        <div class="text-dark">
+            <div class="checkbox inline">
+              <label class="i-checks">
+                <input type="checkbox" value="">
+                <i></i>
+              </label>
+            </div>
+            启用网络使用速率告警       
+        </div>
+        <div class="m-t m-l-lg text-primary">
+           当网络使用率超过
+           <div class="inline v-middle">
+             <div class="input-group w-xs">
+                 <input type="text" value="50" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">kbps</span>
+              </div>
+           </div>
+          ，且持续时间超过
+          <div class="inline v-middle">
+              <div class="input-group w-xs">
+                 <input type="text" value="1" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">分钟</span>
+              </div>
+          </div>，触发告警     
+        </div>
+
+        <div class="text-dark">
+            <div class="checkbox inline">
+              <label class="i-checks">
+                <input type="checkbox" value="">
+                <i></i>
+              </label>
+            </div>
+            启用磁盘使用速率告警       
+        </div>
+        <div class="m-t m-l-lg text-primary">
+           当磁盘使用率超过
+           <div class="inline v-middle">
+             <div class="input-group w-xs">
+                 <input type="text" value="1000" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">KB/s</span>
+              </div>
+           </div>
+          ，且持续时间超过
+          <div class="inline v-middle">
+              <div class="input-group w-xs">
+                 <input type="text" value="1" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">分钟</span>
+              </div>
+          </div>，触发告警     
+        </div>
+        
+        <h4>告警配置</h4>
+        <div class="m-t m-l-lg text-primary">
+           告警重复间隔
+           <div class="inline v-middle">
+             <div class="input-group w-xs">
+                 <input type="text" value="60" class="form-control input-sm" disabled="disabled">
+                 <span class="input-group-addon">分钟</span>
+              </div>
+           </div>    
+        </div>
+
+      </div>
+      <div class='modal-footer' style="text-align:center;">
+        <a class="btn btn-default btn-info">确定</a>
+        <a class="btn btn-default btn btn-default" data-dismiss="modal">取消</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="dialog" aria-hidden="true" class="modal fade" data-bind="modal: { show: isInstall }">
+  <div class='modal-dialog modal-lg' role='document' data-bind="visible: !isInstallVM()">
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>安装软件</h3>
+      </div>
+      <div class='modal-body form-horizontal'>
+        <div>
+          <button class="btn btn-default btn-sm pull-right" data-bind="click: installVM">选择软件</button>
+          虚拟机名称:DB2
+        </div>
+        <hr />
+        <p class="text-muted">注：没有密钥对的虚拟机需输入虚拟机用户密码。</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>软件名称</th>
+              <th>软件版本</th>
+              <th>软件类型</th>
+              <th>软件分类</th>
+              <th>静默安装属性</th>
+              <th>是否重复安装</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>a</td>
+              <td>1.0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>是</td>
+              <td>
+                <a>移除</a>
+              </td>
+            </tr>
+            <tr>
+              <td>b</td>
+              <td>1.0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>是</td>
+              <td>
+                <a>移除</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='modal-footer' style="text-align: center">
+        <input type="button" name="commit" value="确定安装" class="btn btn-default btn-info" />
+        <button name="button" type="submit" class="btn btn-default btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+  <div class='modal-dialog modal-lg' role='document' data-bind="visible: isInstallVM()">
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>安装软件</h3>
+      </div>
+      <div class='modal-body form-horizontal'>
+        <div>
+          虚拟机名称：DB2
+        </div>
+        <hr />
+        <div class="form-inline">
+          软件名称：<input type="text" class="form-control" />&nbsp;&nbsp;
+          软件分类：
+          <select class="form-control">
+            <option>分类1</option>
+            <option>分类2</option>
+            <option>分类3</option>
+          </select>&nbsp;&nbsp;
+          软件类型：
+          <select class="form-control">
+            <option>类型1</option>
+            <option>类型2</option>
+            <option>类型3</option>
+          </select>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-default">搜索</button>
+        </div>
+        <p>&nbsp;</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>选择</th>
+              <th>软件名称</th>
+              <th>软件版本</th>
+              <th>软件类型</th>
+              <th>软件分类</th>
+              <th>静默安装属性</th>
+              <th>是否重复安装</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="checkbox">
+                  <label class="i-checks">
+                    <input type="checkbox" value="">
+                    <i></i>
+                  </label>
+                </div> 
+              </td>
+              <td>a</td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>是</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="checkbox">
+                  <label class="i-checks">
+                    <input type="checkbox" value="">
+                    <i></i>
+                  </label>
+                </div> 
+              </td>
+              <td>a</td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>是</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='modal-footer' style="text-align: center">
+        <input type="button" name="commit" value="选择" class="btn btn-default btn-info" data-bind="click: installVMConfirm" />
+        <button name="button" class="btn btn-default btn btn-default" data-bind="click: installVMCancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div role="dialog" aria-hidden="true" class="modal fade" data-bind="modal: { show: isUpdate }">
+  <div class='modal-dialog modal-lg' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>软件升级</h3>
+      </div>
+      <div class='modal-body'>
+        <div>
+           脚本名称：DB2 软件版本：1
+        </div>
+        <hr />
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th style="width:60px" class="text-center">选择</th>
+              <th>软件名称</th>
+              <th>软件名称版本</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="radio">
+                  <label class="i-checks">
+                    <input type="radio" name="softwareupdate" />
+                    <i></i>
+                  </label>
+                </div>
+              </td>
+              <td>MQ</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="radio">
+                  <label class="i-checks">
+                    <input type="radio" name="softwareupdate" />
+                    <i></i>
+                  </label>
+                </div>
+              </td>
+              <td>MQ</td>
+              <td>8.0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="form-inline">
+          用户名：<input type="text" class="form-control" />&nbsp;&nbsp;&nbsp;&nbsp; 密码：<input type="password" class="form-control" />
+        </div>
+      </div>
+      <div class='modal-footer' style="text-align: center">
+        <input type="button" name="commit" value="确定升级" class="btn btn-default btn-info" />
+        <button name="button" type="submit" class="btn btn-default btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+  var scripts = [null, "assets/lib/highcharts/highstock.js"]
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+    function ViewModel(){
+      this.isConfig = ko.observable(false);
+      this.isInstall = ko.observable(false);
+      this.isInstallVM = ko.observable(false);
+      this.isUpdate = ko.observable(false);
+
+      this.install = function(){
+        this.isInstall(true);
+      }
+      this.installVM = function(){
+        this.isInstallVM(true);
+      }
+      this.installVMConfirm = function(){
+        this.isInstallVM(false);
+      }
+      this.installVMCancel = function(){
+        this.isInstallVM(false);
+      }
+      this.config = function(){
+        this.isConfig(true);
+      };
+      this.update = function(){
+        this.isUpdate(true);
+      };
+    }
+
+    ko.applyBindings(new ViewModel(), $('#page-content')[0]);  
+
+    //cpu使用率
+    $('#cpuUse_chart').highcharts({
+        title: {
+            text: '',
+        },
+        credits:{
+          enabled: false,
+          text : ""
+        },  
+        colors: [
+            '#E35733', // orange
+            '#4c97d7', // blue
+            '#52d74c', // green
+            '#e268de' // purple
+        ],               
+        xAxis: {
+            categories: ['15:55', '16:00', '16:05', '16:10', '16:15', '16:20','16:25', '16:30']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+        },        
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            borderWidth: 0,
+            itemMarginTop: 0,
+            itemMarginBottom: 0
+        },
+        series: [{
+            name: 'cpu使用率',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5]
+        }]
+    });
+
+    // 内存使用率
+    $('#memoryUse_chart').highcharts({
+        title: {
+            text: '',
+        },
+        credits:{
+          enabled: false,
+          text : ""
+        },  
+        colors: [
+            '#E35733', // orange
+            '#4c97d7', // blue
+            '#52d74c', // green
+            '#e268de' // purple
+        ],               
+        xAxis: {
+            categories: ['15:55', '16:00', '16:05', '16:10', '16:15', '16:20','16:25', '16:30']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+        },        
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            borderWidth: 0,
+            itemMarginTop: 0,
+            itemMarginBottom: 0
+        },
+        series: [{
+            name: '内存使用率',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5]
+        }]
+    });
+    // 存储使用率
+    $('#storageUse_chart').highcharts({
+        title: {
+            text: '',
+        },
+        credits:{
+          enabled: false,
+          text : ""
+        },  
+        colors: [
+            '#E35733', // orange
+            '#4c97d7', // blue
+            '#52d74c', // green
+            '#e268de' // purple
+        ],               
+        xAxis: {
+            categories: ['15:55', '16:00', '16:05', '16:10', '16:15', '16:20','16:25', '16:30']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+        },        
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            borderWidth: 0,
+            itemMarginTop: 0,
+            itemMarginBottom: 0
+        },
+        series: [{
+            name: '存储使用率',
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5]
+        }]
+    });
+    // 存储IO
+    $('#storageIO_chart').highcharts({
+        title: {
+            text: '',
+        },
+        credits:{
+          enabled: false,
+          text : ""
+        },  
+        colors: [
+            '#E35733', // orange
+            '#4c97d7', // blue
+            '#52d74c', // green
+            '#e268de' // purple
+        ],               
+        xAxis: {
+            categories: ['15:55', '16:00', '16:05', '16:10', '16:15', '16:20','16:25', '16:30']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+        },        
+        tooltip: {
+            valueSuffix: 'kB/s'
+        },
+        legend: {
+            borderWidth: 0,
+            itemMarginTop: 0,
+            itemMarginBottom: 0
+        },
+        series: [
+        {
+            name: '写入速率',
+            data: [428307, 414470, 452582, 412358, 425369, 42513, 401258, 402356]
+        },
+        {
+            name: '读出速率',
+            data: [73400, 65235, 56842, 85123, 45879, 56875, 65854, 45712]
+        }        
+        ]
+    });
+
+  });
+</script>

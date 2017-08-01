@@ -1,0 +1,92 @@
+<form class="simple_form form-horizontal" novalidate="novalidate" >
+	<div class='modal-dialog modal-lg' role='document'>
+		<div class='modal-content'>
+			<div class='modal-header'>
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button><h3 class='modal-title'>添加网络</h3>
+			</div>
+			<div class='modal-body'>
+				<div class="row">
+					<div class="col-xs-5" style="width:380px">
+						<p>待选择：</p>
+						<table class="table table-striped">
+							<thead>
+								<th>
+                  <div class="checkbox">
+                    <label class="i-checks">
+                      <input type="checkbox" value="">
+                      <i></i>
+                    </label>
+                  </div> 
+                </th>
+								<th>外部网络/IP池</th>
+								<th>网络类型</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+                    <div class="checkbox">
+                      <label class="i-checks">
+                        <input type="checkbox" value="">
+                        <i></i>
+                      </label>
+                    </div> 
+                  </td>
+									<td>网络名称1</td>
+									<td>数据中心网络</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-xs-1">
+						<button class="btn btn-block btn-default" style="margin-top:150px">&gt;&gt;</button>
+						<button class="btn btn-block btn-default">&lt;&lt;</button>
+					</div>
+					<div class="col-xs-5" style="width:380px">
+						<p>已选择：</p>
+						<table class="table table-striped">
+							<thead>
+								<th>
+                  <div class="checkbox">
+                    <label class="i-checks">
+                      <input type="checkbox" value="">
+                      <i></i>
+                    </label>
+                  </div> 
+                </th>
+								<th>外部网络/IP池</th>
+								<th>网络类型</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+                    <div class="checkbox">
+                      <label class="i-checks">
+                        <input type="checkbox" value="">
+                        <i></i>
+                      </label>
+                    </div> 
+                  </td>
+									<td>网络名称1</td>
+									<td>数据中心网络</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class='modal-footer' style="text-align: center">
+				<input type="button" name="commit" value="确定" class="btn btn-default btn-info" />
+				<button name="button" type="submit" class="btn btn-default btn btn-default" data-dismiss="modal">取消</button>
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+	var scripts = [null, null]
+	$('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+		$("#netSelect").bind("change",function(){
+			var val = $(this).val();
+			$("#net_" + val).show().siblings().hide();
+		});
+	});
+</script>

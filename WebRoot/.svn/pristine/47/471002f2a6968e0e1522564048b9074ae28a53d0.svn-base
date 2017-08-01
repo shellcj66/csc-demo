@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>申请确认</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <link href='../../../assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/animate.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/simple-line-icons.css' rel='stylesheet' type='text/css'>
+    <link href="../../../assets/lib/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../../../assets/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet">
+    <link href="../../../assets/lib/bootstrap-slider/slider.css" rel="stylesheet">
+    <link href='../../../assets/css/font.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/angulr.css' rel='stylesheet' type='text/css'>
+    <link href='../../../assets/css/knockout-datatable.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="../../../assets/css/app.css" />
+
+    <style type="text/css">
+    /* 配置 */
+    .config-item{margin-bottom: 10px;}
+    .config-item .panel{margin-bottom: 0;}
+    .config-item .panel-heading{background-color: #dee5e7; font-weight: 700;}
+    .config-item table{border-collapse: collapse !important;}
+    .config-item table tr td{padding: 10px;border:1px solid #dee5e7; text-align: center;}
+    </style>
+</head>
+
+<body>
+
+
+<div class='wrapper-md'> 
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <h1><img alt='广州开发区' src='../../../assets/img/gz_kfq/logo_gzkfq.png'></h1>
+            <h2 class="text-center">云主机资源申请信息</h2>
+            <div class="alert alert-success m-t"><i class="fa fa-check fa-4x v-middle"></i> 申请成功，订单编号为109873847586，<a href="#" class="text-info">点击下载</a>资源清单文件。</div>
+            <div class="alert alert-danger m-t"><i class="fa fa-warning fa-4x v-middle"></i>申请失败，请<a href="gz_vm_oa.html" class="text-info">返回</a>重新提交。</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

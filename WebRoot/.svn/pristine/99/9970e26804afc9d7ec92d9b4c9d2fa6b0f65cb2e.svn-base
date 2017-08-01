@@ -1,0 +1,140 @@
+<div class="bg-light lter b-b wrapper-sm">
+  <ol class="breadcrumb">
+    <li>当前位置：</li>
+    <li class="active">操作向导</li>
+  </ol>
+</div>
+<div class='wrapper-md'>    
+  	<h4 class="m-b text-primary"><i class="fa fa-star"></i> 入云向导——<span class="text-sm">对接OpenStack</span></h4>
+		<div class="row guide">
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/resources/partitions/datacenters/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-dataCenter.png">
+		            </div>
+		            <h4 class="m-t">创建数据中心</h4>
+		            <p class="text-left text-muted">数据中心是一个或多个云管理平台下物理资源的集合。用户可以根据自己的规划创建数据中心，接入云管理平台，把多个云管理平台下的资源划分到一个数据中心里。 </p>
+		        </div>
+			</a>
+	    </div>
+	    <div class="guide-arr">
+	    	<img src="assets/img/arr1.png">
+	    </div>
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/resources/partitions/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-partition.png">
+		            </div>
+		            <h4 class="m-t">创建可用分区</h4>
+		            <p class="text-left text-muted">可用分区是一组相对较小的物理资源组合。创建可用分区可将数据中心的物理资源进行划分纳入可用分区进行管理，即把数据中心的一组很大的资源，划分为一个个小的资源单位，提供给用户使用。 </p>
+		        </div>
+			</a>
+	    </div>
+	    <div class="guide-arr">
+	    	<img src="assets/img/arr1.png">
+	    </div>
+	    <div class="col-xs-2 guide-item">
+			<a onclick="doAddResource('iso')" href="#">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-image.png">
+		            </div>
+		            <h4 class="m-t">添加镜像</h4>
+		            <p class="text-left text-muted">镜像是云主机的副本，包含操作系统、应用软件、云主机的规格配置要求等，可用于云主机和应用实例的创建。</p>
+		        </div>
+			</a>
+	    </div>
+
+	</div>
+</div>
+<div class='wrapper-md'>    
+  	<h4 class="m-b text-primary"><i class="fa fa-star"></i> 入云向导——<span class="text-sm">对接CNware</span></h4>
+	<div class="row guide">
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/resources/partitions/datacenters/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-dataCenter.png">
+		            </div>
+		            <h4 class="m-t">创建数据中心</h4>
+		            <p class="text-left text-muted">数据中心是一个或多个云管理平台下物理资源的集合。用户可以根据自己的规划创建数据中心，接入云管理平台，把多个云管理平台下的资源划分到一个数据中心里。 </p>
+		        </div>
+			</a>
+	    </div>
+	    <div class="guide-arr">
+	    	<img src="assets/img/arr1.png">
+	    </div>
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/resources/partitions/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-partition.png">
+		            </div>
+		            <h4 class="m-t">创建可用分区</h4>
+		            <p class="text-left text-muted">可用分区是一组相对较小的物理资源组合。创建可用分区可将数据中心的物理资源进行划分纳入可用分区进行管理，即把数据中心的一组很大的资源，划分为一个个小的资源单位，提供给用户使用。</p>
+		        </div>
+			</a>
+	    </div>
+
+	</div>
+</div>
+<div class='wrapper-md'>    
+  	<h4 class="m-b text-primary"><i class="fa fa-star"></i> 运营向导</h4>
+	<div class="row guide">
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/systems/users/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-user.png">
+		            </div>
+		            <h4 class="m-t">用户管理</h4>
+		            <p class="text-left text-muted">用户管理主要是将统一认证平台上所有的用户嵌入统一进行管理，可给用户分配CSC平台的角色 。</p>
+		        </div>
+			</a>
+	    </div>
+	    <div class="guide-arr">
+	    	<img src="assets/img/arr1.png">
+	    </div>
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/systems/workflows/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-flow.png">
+		            </div>
+		            <h4 class="m-t">流程定义</h4>
+		            <p class="text-left text-muted">提供流程引擎，可由管理员根据业务需要自定义流程审批节点和审核人，支持增、删节点，多级审批，可定义业务相关的流程和业务无关的流程。 </p>
+		        </div>
+			</a>
+			<span>(可选)</span>
+	    </div>	
+	    <div class="guide-arr">
+	    	<img src="assets/img/arr1.png">
+	    </div>
+	    <div class="col-xs-2 guide-item">
+			<a onclick="removeTreeStyle()" href="#pages/services/service_definitions/index">
+		        <div class="panel panel-white">
+		            <div class="img">
+		                <img src="assets/img/guide-release.png">
+		            </div>
+		            <h4 class="m-t">产品发布</h4>
+		            <p class="text-left text-muted">通过对产品资源进行整合，形成资源的服务套餐，为用户提供服务资源产品模板，可将IT资源按单个或多个有机整合的方式发布为云服务。对产品服务的创建和发布、变更、下线、销毁进行全生命周期管理。 </p>
+		        </div>
+			</a>
+	    </div>	
+
+	</div>
+</div>
+
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+  var scripts = [null, null]
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+    //交替实现active
+    $(".guide > div > a").bind("click", function() {
+        $(this).addClass("active").parent().siblings('.guide-item').find('a').removeClass("active")
+    })
+
+  });
+</script>

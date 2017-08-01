@@ -1,0 +1,352 @@
+<style type="text/css">
+.btn-group.btn-group-white-blue .btn-default{font-size: 13px !important;}
+.btn-group.btn-group-white-blue .btn-default:hover,
+.btn-group.btn-group-white-blue .btn-default.focus,
+.btn-group.btn-group-white-blue .btn-default:focus,
+.btn-group.btn-group-white-blue .btn-default:active,
+.btn-group.btn-group-white-blue .btn-default.active,
+.btn-group.btn-group-white-blue .btn-default.active.focus,
+.btn-group.btn-group-white-blue .btn-default.active:focus,
+.btn-group.btn-group-white-blue .btn-default.active:hover,
+.btn-group.btn-group-white-blue .btn-default:active.focus,
+.btn-group.btn-group-white-blue .btn-default:active:focus,
+.btn-group.btn-group-white-blue .btn-default:active:hover{
+  color: #ffffff !important;
+  background-color: #19a9d5;
+  border-color: #189ec8;
+}
+/* 配置 */
+.config-item{text-align: center;}
+.config-item .panel{margin-bottom: 0;}
+.config-item .panel-heading{background-color: #dee5e7;}
+.config-item table{border-collapse: collapse !important;}
+.config-item table tr td{padding: 10px;border:1px solid #dee5e7; }
+.config-item a:hover .panel-heading,.config-item a.active .panel-heading{background-color: #23b7e5; color: #dcf2f8;}
+.config-item a:hover table tr td,.config-item a.active table tr td{border-color:#23b7e5 !important;}
+
+</style>
+<div class="bg-light lter b-b wrapper-sm">
+  <ol class="breadcrumb">
+    <li>当前位置：</li>
+    <li>服务申请</li>
+    <li class="active">云主机</li>
+  </ol>
+</div>
+
+<div class='wrapper-md'>
+  <form class='form-horizontal' data-bind="">
+    <div class="form-group">
+      <div class="col-xs-2 control-label"><a class="text-danger" onclick="systemMsg.alert('成功申请资源后，若需要升级配置，可以在资源列表中升级配置；若需要降级配置，只能在当前服务周期结束后重新购买低配置的资源，<span class=\'text-danger\'>请谨慎选择配置！！！</span>')">服务申请须知&gt;&gt;</a></div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-2 control-label">配置</div>
+      <div class="col-xs-10">
+        <div class="row config">
+          <div class="col-xs-2 config-item">
+            <a onclick="removeTreeStyle()">
+              <div class="panel no-border">
+                  <div class="panel-heading">配置1</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>CPU</td>
+                      <td>内存</td>
+                    </tr>
+                    <tr>
+                      <td>1个</td>
+                      <td>1GB</td>
+                    </tr>
+                  </table>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-2 config-item">
+            <a onclick="removeTreeStyle()">
+              <div class="panel no-border">
+                  <div class="panel-heading">配置2</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>CPU</td>
+                      <td>内存</td>
+                    </tr>
+                    <tr>
+                      <td>1个</td>
+                      <td>2GB</td>
+                    </tr>
+                  </table>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-2 config-item">
+            <a onclick="removeTreeStyle()">
+              <div class="panel no-border">
+                  <div class="panel-heading">配置3</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>CPU</td>
+                      <td>内存</td>
+                    </tr>
+                    <tr>
+                      <td>2个</td>
+                      <td>4GB</td>
+                    </tr>
+                  </table>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-2 config-item">
+            <a onclick="removeTreeStyle()">
+              <div class="panel no-border">
+                  <div class="panel-heading">配置4</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>CPU</td>
+                      <td>内存</td>
+                    </tr>
+                    <tr>
+                      <td>4个</td>
+                      <td>8GB</td>
+                    </tr>
+                  </table>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-2 config-item">
+            <a onclick="removeTreeStyle()">
+              <div class="panel no-border">
+                  <div class="panel-heading">配置5</div>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>CPU</td>
+                      <td>内存</td>
+                    </tr>
+                    <tr>
+                      <td><div onclick="showModal('pages/services/service_applies/vm_config.html')">自定义</div></td>
+                      <td><div onclick="showModal('pages/services/service_applies/vm_config.html')">自定义</div></td>
+                    </tr>
+                  </table>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xs-1">
+            <span class="text-danger inline m-l-n m-t-sm">*</span>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">可用分区</label>
+      <div class="col-xs-4">
+        <select class="form-control" data-bind="value:">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+      <div class="col-xs-6">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+        <span class="text-muted inline m-t-xs">自动分配云主机名称，可在云主机资源列表修改</span>
+      </div>     
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">操作系统类型</label>
+      <div class="col-xs-4">
+        <select class="form-control" data-bind="value:">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+      <div class="col-xs-1">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+      </div>                    
+    </div>
+    <div class="form-group">     
+      <label class="col-xs-2 control-label">操作系统版本</label>
+      <div class="col-xs-4">
+        <select class="form-control" data-bind="value:">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+      </div>
+      <div class="col-xs-1">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+      </div>          
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">存储（GB）</label>
+      <div class="col-xs-4">
+        <div class="input-group">
+          <span class="input-group-addon">系统盘</span>
+          <input class="form-control" type="text" value="40" disabled>
+          <span class="input-group-addon">GB</span>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <span class="text-muted inline m-t-xs">自动分配系统盘名称，默认40GB，不可修改，免费赠送，不收费</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-4 col-xs-offset-2">
+        <div class="input-group">
+          <span class="input-group-addon">数据盘</span>
+          <input class="form-control" type="text" value="">
+          <span class="input-group-addon">GB</span>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <span class="text-muted inline m-t-xs">自动分配数据盘盘名称，容量大小为20GB-2048GB，请输入正整数</span>
+        <a onclick="" class="inline v-middle m-l"><i class="glyphicon glyphicon-remove-circle text-2x"></i></a>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-10 col-xs-offset-2">
+        <button name="button" class="btn btn-info btn-sm">添加数据盘</button>
+        <span class="text-muted">只能添加3个数据盘，还可以添加<b class="text-danger">3</b>个</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">带宽（Mbps）</label>
+      <div class="col-xs-4">
+            <div class="row">
+              <div class="col-xs-6"><input id="slider" class="slider slider-horizontal" type="text"> </div>
+              <div class="col-xs-6"><input id="sliderVal" type="text"></div>
+            </div>
+      </div>
+      <div class="col-xs-5">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+        <span class="text-muted inline m-t-xs">带宽范围是0Mbps-100Mbps,若不需要网络或者单独购买公网IP,带宽值请选择0Mbps</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">密码</label>
+      <div class="col-xs-4">
+        <input class="form-control" type="password" placeholder="至少输入6个字符" data-bind="value:"/>
+      </div>
+      <div class="col-xs-1">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+      </div> 
+    </div>
+    <div class="form-group">               
+      <label class="col-xs-2 control-label">重复密码</label>
+      <div class="col-xs-4">
+        <input class="form-control" type="password" placeholder="至少输入6个字符" data-bind="value:"/>
+      </div>
+      <div class="col-xs-1">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+      </div>          
+    </div>
+    <div class="form-group">
+      <div class="col-xs-2 control-label">购买时长</div>
+      <div class="col-xs-10">
+            <div class="btn-group btn-group-white-blue" data-toggle="buttons">
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option21"> 1个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option22"> 2个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option23"> 3个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option24"> 4个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option25"> 5个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option26"> 6个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option27"> 7个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option28"> 8个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option29"> 9个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option30"> 10个月
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option31"> 11个月
+              </label>
+              <label class="btn btn-default active">
+                <input type="radio" name="options2" id="option32" checked> 1年
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option33"> 2年
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options2" id="option34"> 3年
+              </label>
+            </div>
+        <span class="text-danger inline m-l-sm">*</span>
+      </div>    
+    </div>
+    <div class="form-group">
+      <label class="col-xs-2 control-label">购买数量</label>
+      <div class="col-xs-4">
+        <input id="touchspinNum" type="text" value="1">
+      </div>
+      <div class="col-xs-6">
+        <span class="text-danger inline m-l-n m-t-sm">*</span>
+        <span class="text-muted inline m-t-xs">最多购买20台，请输入1-20之间的正整数</span>
+      </div>     
+    </div>
+    <div class="line line-dashed b-b line-lg pull-in"></div>
+    <div class="m-t m-b text-center">
+      <button type="button" class="btn btn-info">加入购物车</button>
+      <button type="submit" class="btn btn-success">提交订单</button>
+    </div>    
+  </form>
+</div>
+
+<script type="text/javascript">
+  var scripts = [null, "assets/lib/bootstrap-slider/bootstrap-slider.js", "assets/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js", null];
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+
+    $("#touchspinNum").TouchSpin({
+        min: 0,
+        max: 20,
+        step: 1,
+        postfix: '台',
+        verticalbuttons: true,
+        verticalupclass: 'fa fa-caret-up',
+        verticaldownclass: 'fa fa-caret-down'
+    })
+
+    $("#sliderVal").TouchSpin({
+        min: 0,
+        max: 100,
+        step: 1,
+        postfix: 'Mbps',
+        verticalbuttons: true,
+        verticalupclass: 'fa fa-caret-up',
+        verticaldownclass: 'fa fa-caret-down'
+    })
+
+    var val = 50;
+    $("#slider").slider({
+      min: 0,
+      max: 100,
+      step: 1,
+      value: val,
+      formater: function(value) {
+        $("#sliderVal").val(value)
+        return value;
+      }
+    })
+    $("#sliderVal").change(function(){
+      $("#slider").slider("setValue",$("#sliderVal").val())//设定值
+    })
+
+
+    //交替实现active
+    $(".config > div > a").bind("click", function() {
+        $(this).addClass("active").parent().siblings('.config-item').find('a').removeClass("active")
+    })
+
+    
+  })
+</script>

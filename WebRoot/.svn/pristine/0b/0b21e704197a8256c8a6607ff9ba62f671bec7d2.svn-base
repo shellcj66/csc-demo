@@ -1,0 +1,225 @@
+<div class="bg-light lter b-b wrapper-sm">
+  <ol class="breadcrumb">
+    <li>当前位置：</li>
+    <li>系统</li>
+    <li class="active">首页配置</li>
+  </ol>
+</div>
+<div class='wrapper-md'>
+    <div class="panel panel-default b-blue">
+      <div class="row wrapper">
+        <div class="col-xs-9">
+          <button class="btn btn-sm btn-info">保存</button>
+        </div>        
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>首页模块名称</th>
+              <th>显示顺序</th>
+              <th>已配置的角色</th>
+              <th>是否显示</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>资源管理</td>
+              <td>1</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>快捷入口</td>
+              <td>2</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员，普通用户</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>中心资源</td>
+              <td>3</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>配额信息</td>
+              <td>4</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>我的任务</td>
+              <td>5</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>最新通知</td>
+              <td>6</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>最近订单</td>
+              <td>7</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>最近告警</td>
+              <td>8</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>总体告警统计</td>
+              <td>9</td>
+              <td>系统管理员，运营人员，运维人员，VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>VDC配额</td>
+              <td>10</td>
+              <td>VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>可用分区</td>
+              <td>11</td>
+              <td>VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>网络</td>
+              <td>12</td>
+              <td>VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+            <tr>
+              <td>用户</td>
+              <td>13</td>
+              <td>VDC管理员</td>
+              <td>
+                  <label class="i-switch v-middle">
+                    <input type="checkbox" checked>
+                    <i></i>
+                  </label>                
+              </td>
+              <td><a href="#" onclick="showModal('pages/systems/dashboards/users.html')">角色配置</a> | <a href="#">上移</a> | <a href="#">下移</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <footer class="panel-footer">
+        <ul class="pagination">
+          <li class="page active">
+            <a href="#pages/javascript:void(0)">1</a>
+          </li>
+          <li class="page">
+            <a>2</a>
+          </li>
+          <li class="page">
+            <a>3</a>
+          </li>
+          <li class="page">
+            <a>4</a>
+          </li>
+          <li class="page">
+            <a >5</a>
+          </li>
+          <li class="page gap disabled">
+            <a href="#pages/javascript:void(0)">…</a>
+          </li>
+          <li class="next">
+            <a>下一页 ›</a>
+          </li>
+          <li class="last">
+            <a>末页 »</a>
+          </li>
+        </ul>
+      </footer>
+    </div>    
+    
+</div>
+<!-- page specific plugin scripts -->
+<script type="text/javascript">
+  var scripts = [null, null]
+  $('.page-content-area').ace_ajax('loadScripts', scripts, function(args) {
+    //inline scripts related to this page
+  });
+</script>
